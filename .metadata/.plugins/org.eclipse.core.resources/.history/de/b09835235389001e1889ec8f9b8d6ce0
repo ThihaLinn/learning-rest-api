@@ -1,0 +1,29 @@
+package com.jdc.weekend.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.jdc.weekend.entity.Account;
+import com.jdc.weekend.entity.Account.Role;
+
+
+@RestController
+@RequestMapping("/home")
+public class Service {
+
+	@GetMapping("{id}")
+	public Account createAccount(Integer id) {
+		
+		return new Account("Thiha Linn","thiha@gmail.com","1234",Role.Admin);
+	}
+	
+	@PostMapping()
+	public Account createAccount(@RequestBody Account account) {
+		
+		return new Account("Thiha Linn","thiha@gmail.com","1234",Role.Admin);
+	}
+	
+}

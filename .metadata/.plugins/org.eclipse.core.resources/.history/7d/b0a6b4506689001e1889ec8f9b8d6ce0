@@ -1,0 +1,39 @@
+package com.jdc.weekend.service;
+
+import java.util.List;
+
+import com.jdc.weekend.entity.Account;
+
+public class AccountServiceImpl implements AccountService {
+
+	@Override
+	public String createAccount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateAccount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteAccount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Account accountId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Account> allAccount() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

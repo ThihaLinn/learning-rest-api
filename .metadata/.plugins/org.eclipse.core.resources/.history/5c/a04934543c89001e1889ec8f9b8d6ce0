@@ -1,0 +1,26 @@
+package com.jdc.weekend.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Entity
+@Data
+@Table(name = "account")
+public class Account {
+
+	private Integer id;
+	
+	private String name;
+	
+	private String email;
+	
+	private String password;
+	
+	private Role role;
+	
+	private enum Role{
+		Admin,Member
+	}
+	
+}
